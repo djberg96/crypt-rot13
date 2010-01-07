@@ -1,0 +1,7 @@
+* CHANGES
+* MANIFEST
+* README
+* Rakefile
+* crypt-rot13.gemspec
+* lib/crypt/rot13.rb
+* test/test_crypt_rot13.rb

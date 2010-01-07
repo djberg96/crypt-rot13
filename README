@@ -1,0 +1,48 @@
+== Description
+   A library for performing simple character rotation (i.e. Caesar Cipher)
+   encryption. There are many like it, but this one is mine.
+
+== Installation
+=== Manual Installation
+   rake test (optional)
+   rake install
+   
+=== Gem Installation
+   rake test (optional)
+   rake install_gem
+   
+== Synopsis
+   require 'crypt/rot13'
+   include Crypt
+
+   str = Rot13.new("Hello World", 3) # Caesar cipher
+   puts str # "Khoor Zruog"
+
+== Notes
+   Not unicode friendly. Only works on ASCII values 65-90 and 97-122.
+
+   See http://en.wikipedia.org/wiki/ROT13 for more on ROT13
+
+== Acknowledgements
+   Thanks go to Gaius Julius Caesar (d. 44 BC) for creating one of the first,
+   and most simple, encryption schemes. Hail Caesar!
+
+== Known Bugs
+   None that I'm aware of.
+
+   Please log any bugs you find on the SourceForge project page at
+   http://www.rubyforge.org/projects/shards.
+
+== License
+   Artistic 2.0
+
+== Copyright
+   (C) 2005-2009, Daniel J. Berger, All Rights Reserved
+
+== Warranty
+   This package is provided "as is" and without any express or
+   implied warranties, including, without limitation, the implied
+   warranties of merchantability and fitness for a particular purpose.
+
+== Author
+   Daniel J. Berger

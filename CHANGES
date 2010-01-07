@@ -1,0 +1,23 @@
+== 1.0.4 - 24-Sep-2009
+* Fixed a packaging bug.
+* Added the 'gem' task to the Rakefile.
+* Some documentation updates.
+
+== 1.0.3 - 1-Aug-2009
+* Changed license to Artistic 2.0.
+* Some gemspec updates, including license update.
+* Changed test file name to test_crypt_rot13.rb.
+
+== 1.0.2 - 25-Jul-2007
+* Changed Rot13Error to Rot13::Error
+* Added a Rakefile with tasks for installation and testing
+* Removed the install.rb file. Installation is now handled via a Rake task.
+* The MANIFEST file was updated and is now rdoc formatted.
+
+== 1.0.1 - 6-Jun-2005
+* Moved project to RubyForge.
+* Minor test and doc changes.
+* Added a .gemspec file.  Gem available online.
+
+== 1.0.0 - 18-May-2004
+* Initial release
