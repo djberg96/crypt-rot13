@@ -22,7 +22,7 @@ class TC_Rot13 < Test::Unit::TestCase
    end
 
    def test_version
-      assert_equal('1.0.4', Rot13::VERSION)
+      assert_equal('1.0.5', Rot13::VERSION)
    end
 
    def test_constructor
