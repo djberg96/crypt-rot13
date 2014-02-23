@@ -25,14 +25,15 @@
 = Known Bugs
   None that I'm aware of.
 
-  Please log any bugs you find on the SourceForge project page at
-  http://www.rubyforge.org/projects/shards.
+  Please log any bugs you find on the SourceForge project page at:
+
+  https://github.com/djberg96/crypt-rot13
 
 = License
   Artistic 2.0
 
 = Copyright
-  (C) 2005-2010, Daniel J. Berger, All Rights Reserved
+  (C) 2005-2014, Daniel J. Berger, All Rights Reserved
 
 = Warranty
   This package is provided "as is" and without any express or
