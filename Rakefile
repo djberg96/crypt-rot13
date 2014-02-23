@@ -8,7 +8,12 @@ namespace :gem do
   desc 'Create the crypt-rot13 gem'
   task :create => [:clean] do
     spec = eval(IO.read('crypt-rot13.gemspec'))
-    Gem::Builder.new(spec).build
+    if Gem::VERSION < "2.0"
+      Gem::Builder.new(spec).build
+    else
+      require 'rubygems/package'
+      Gem::Package.build(spec)
+    end
   end
 
   desc 'Install the crypt-rot13 gem'
