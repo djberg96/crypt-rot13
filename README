@@ -23,9 +23,7 @@
   and most simple, encryption schemes. Hail Caesar!
 
 = Known Bugs
-  None that I'm aware of.
-
-  Please log any bugs you find on the SourceForge project page at:
+  None that I'm aware of. Please log any bugs you find on the project page at:
 
   https://github.com/djberg96/crypt-rot13
 
@@ -33,7 +31,7 @@
   Artistic 2.0
 
 = Copyright
-  (C) 2005-2014, Daniel J. Berger, All Rights Reserved
+  (C) 2005-2016, Daniel J. Berger, All Rights Reserved
 
 = Warranty
   This package is provided "as is" and without any express or
