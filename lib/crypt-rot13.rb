@@ -1,1 +1,1 @@
-require_relative 'crypt/fog'
+require_relative 'crypt/rot13'
