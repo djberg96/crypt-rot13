@@ -7,19 +7,16 @@ CLEAN.include("**/*.gem", "**/*.rbc")
 namespace :gem do
   desc 'Create the crypt-rot13 gem'
   task :create => [:clean] do
+    require 'rubygems/package'
     spec = eval(IO.read('crypt-rot13.gemspec'))
-    if Gem::VERSION < "2.0"
-      Gem::Builder.new(spec).build
-    else
-      require 'rubygems/package'
-      Gem::Package.build(spec)
-    end
+    spec.signing_key = File.join(Dir.home, '.ssh', 'gem-private_key.pem')
+    Gem::Package.build(spec, true)
   end
 
   desc 'Install the crypt-rot13 gem'
   task :install => [:create] do
     file = Dir["*.gem"].first
-    sh "gem install #{file}"
+    sh "gem install -l #{file}"
   end
 end
 
