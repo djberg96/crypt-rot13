@@ -14,7 +14,8 @@
   puts str # "Khoor Zruog"
 
 = Notes
-  Not unicode friendly. Only works on ASCII values 65-90 and 97-122.
+  Not unicode friendly. Only works on ASCII values 65-90 and 97-122. Other
+  characters will effectively be ignored, i.e. remain the same.
 
   See http://en.wikipedia.org/wiki/ROT13 for more on ROT13
 
@@ -28,10 +29,10 @@
   https://github.com/djberg96/crypt-rot13
 
 = License
-  Artistic 2.0
+  Apache-2.0
 
 = Copyright
-  (C) 2005-2016, Daniel J. Berger, All Rights Reserved
+  (C) 2005-2019, Daniel J. Berger, All Rights Reserved
 
 = Warranty
   This package is provided "as is" and without any express or
