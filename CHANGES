@@ -1,3 +1,10 @@
+== 1.1.0 - 25-Jan-2019
+* Changed license to Apache-2.0.
+* The VERSION constant is now frozen.
+* Added metadata to the gemspec.
+* Added rake as a development dependency (which it always was really).
+* Updated cert, should be good for about 10 years.
+
 == 1.0.6 - 15-Jan-2016
 * This gem is now signed.
 * The gem related tasks in the Rakefile now assume Rubygems 2.x.
