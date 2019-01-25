@@ -2,9 +2,9 @@ require 'rubygems'
 
 Gem::Specification.new do |spec|
   spec.name       = 'crypt-rot13'
-  spec.version    = '1.0.6'
+  spec.version    = '1.1.0'
   spec.author     = 'Daniel J. Berger'
-  spec.license    = 'Artistic 2.0'
+  spec.license    = 'Apache-2.0'
   spec.email      = 'djberg96@gmail.com'
   spec.homepage   = 'http://github.com/djberg96/crypt-rot13'
   spec.summary    = 'Character rotation encryption, i.e. Caesar Cipher'
@@ -13,6 +13,17 @@ Gem::Specification.new do |spec|
   spec.cert_chain = Dir['certs/*']
 
   spec.extra_rdoc_files  = ['README', 'CHANGES', 'MANIFEST']
+
+  spec.add_development_dependency('rake')
+
+  spec.metadata = {
+    'homepage_uri'      => 'https://github.com/djberg96/crypt-rot13',
+    'bug_tracker_uri'   => 'https://github.com/djberg96/crypt-rot13/issues',
+    'changelog_uri'     => 'https://github.com/djberg96/crypt-rot13/blob/master/CHANGES',
+    'documentation_uri' => 'https://github.com/djberg96/crypt-rot13/wiki',
+    'source_code_uri'   => 'https://github.com/djberg96/crypt-rot13',
+    'wiki_uri'          => 'https://github.com/djberg96/crypt-rot13/wiki'
+  }
 
   spec.description = <<-EOF
     The crypt-rot13 library provides an interface for a simple character
