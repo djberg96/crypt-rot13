@@ -22,7 +22,8 @@ class TC_Rot13 < Test::Unit::TestCase
   end
 
   def test_version
-    assert_equal('1.0.6', Rot13::VERSION)
+    assert_equal('1.1.0', Rot13::VERSION)
+    assert_true(Rot13::VERSION.frozen?)
   end
 
   def test_constructor
