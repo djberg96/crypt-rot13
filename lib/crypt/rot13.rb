@@ -8,7 +8,7 @@ module Crypt
     class Error < ArgumentError; end
 
     # The version of the crypt-rot13 library.
-    VERSION = '1.1.0'.freeze
+    VERSION = '1.1.1'.freeze
 
     # Returns a new Rot13 object. The object is a string with the letters
     # each rotated by +degree+.
