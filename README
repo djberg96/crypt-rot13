@@ -8,9 +8,8 @@
    
 = Synopsis
   require 'crypt/rot13'
-  include Crypt
 
-  str = Rot13.new("Hello World", 3) # Caesar cipher
+  str = Crypt::Rot13.new("Hello World", 3) # Caesar cipher
   puts str # "Khoor Zruog"
 
 = Notes
@@ -32,7 +31,7 @@
   Apache-2.0
 
 = Copyright
-  (C) 2005-2019, Daniel J. Berger, All Rights Reserved
+  (C) 2005-2020, Daniel J. Berger, All Rights Reserved
 
 = Warranty
   This package is provided "as is" and without any express or
