@@ -1,3 +1,7 @@
+== 1.2.0 - 10-Sep-2020
+* Switch from test-unit to rspec.
+* Add a Gemfile.
+
 == 1.1.1 - 4-Jun-2020
 * Added a LICENSE file to the distro as required by the Apache-2.0 license.
 
