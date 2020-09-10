@@ -6,4 +6,4 @@
 * certs/djberg96_pub.pem
 * lib/crypt-rot13.rb
 * lib/crypt/rot13.rb
-* test/test_crypt_rot13.rb
+* spec/crypt_rot13_spec.rb

@@ -1,6 +1,6 @@
 require 'rake'
 require 'rake/clean'
-require 'rake/testtask'
+require 'rspec/core/rake_task'
 
 CLEAN.include("**/*.gem", "**/*.rbc")
 
@@ -20,9 +20,8 @@ namespace :gem do
   end
 end
 
-Rake::TestTask.new do |t|
-  t.warning = true
-  t.verbose = true
+RSpec::Core::RakeTask.new do |t|
+  t.pattern = 'spec/crypt_rot13_spec.rb'
 end
 
-task :default => :test
+task :default => :spec
