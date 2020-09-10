@@ -21,7 +21,7 @@ RSpec.describe Crypt::Rot13 do
   end
 
   example "version" do
-    expect(described_class::VERSION).to eq('1.1.1')
+    expect(described_class::VERSION).to eq('1.2.0')
     expect(described_class::VERSION).to be_frozen
   end
 
