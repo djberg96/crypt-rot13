@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # The Crypt module serves as a namespace only.
 module Crypt
 
@@ -16,7 +18,7 @@ module Crypt
     # You cannot use a multiple of 26 as the degree or a Rot13::Error will
     # be raised. So, your days of double rot13 encryption are over.
     #
-    def initialize(str='', degree=13)
+    def initialize(str = '', degree = 13)
       str = rotate_string(str, degree) unless str.empty?
       super(str)
     end
