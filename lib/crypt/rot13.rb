@@ -32,19 +32,19 @@ module Crypt
     def rotate_string(str, degree)
       case degree.modulo(26)
         when 0
-        raise Error, 'degree must not be a multiple of 26'
+          raise Error, 'degree must not be a multiple of 26'
         when 13
-        str = str.tr('a-zA-Z', 'n-za-mN-ZA-M')
-      else
-        str = str.unpack('C' * str.length).map! do |e|
-          if e >= 97 && e <= 122
-            ((e - 97 + degree) % 26) + 97
-          elsif e >= 65 && e <= 90
-            ((e - 65 + degree) % 26) + 65
-          else
-            e
-          end
-        end.pack('C' * str.length)
+          str = str.tr('a-zA-Z', 'n-za-mN-ZA-M')
+        else
+          str = str.unpack('C' * str.length).map! do |e|
+            if e >= 97 && e <= 122
+              ((e - 97 + degree) % 26) + 97
+            elsif e >= 65 && e <= 90
+              ((e - 65 + degree) % 26) + 65
+            else
+              e
+            end
+          end.pack('C' * str.length)
       end
 
       str
