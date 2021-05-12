@@ -8,7 +8,7 @@ namespace :gem do
   desc 'Create the crypt-rot13 gem'
   task :create => [:clean] do
     require 'rubygems/package'
-    spec = eval(IO.read('crypt-rot13.gemspec'))
+    spec = Gem::Specification.load('crypt-rot13.gemspec')
     spec.signing_key = File.join(Dir.home, '.ssh', 'gem-private_key.pem')
     Gem::Package.build(spec)
   end
