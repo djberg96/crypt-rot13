@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ########################################################################
 # crypt_rot13_spec.rb
 #
@@ -20,33 +22,33 @@ RSpec.describe Crypt::Rot13 do
     @r9 = described_class.new('XYZ', 23)
   end
 
-  example "version" do
+  example 'version' do
     expect(described_class::VERSION).to eq('1.2.0')
     expect(described_class::VERSION).to be_frozen
   end
 
-  example "constructor" do
+  example 'constructor' do
     expect(described_class).to respond_to(:new)
     expect{ described_class.new }.not_to raise_error
     expect{ described_class.new('foo') }.not_to raise_error
     expect{ described_class.new('foo', 7) }.not_to raise_error
   end
 
-  example "available_methods" do
+  example 'available_methods' do
     expect(@r1).to respond_to(:rotate)
   end
 
-  example "degree" do
+  example 'degree' do
     expect{ described_class.new('foo', 26) }.to raise_error(Crypt::Rot13::Error)
     expect{ described_class.new('foo', 52) }.to raise_error(Crypt::Rot13::Error)
     expect{ described_class.new('foo', 25) }.not_to raise_error
   end
 
-  example "string_class" do
+  example 'string_class' do
     expect(@r1).to be_kind_of(String)
   end
 
-  example "return_value_default_degree" do
+  example 'return_value_default_degree' do
     expect(@r1).to eq('nop')
     expect(@r2).to eq('NOP')
     expect(@r3).to eq('klm')
@@ -54,14 +56,14 @@ RSpec.describe Crypt::Rot13 do
     expect(@r5).to eq('n1o2p3@#$')
   end
 
-  example "return_value_custom_degree" do
+  example 'return_value_custom_degree' do
     expect(@r6).to eq('def')
     expect(@r7).to eq('DEF')
     expect(@r8).to eq('uvw')
     expect(@r9).to eq('UVW')
   end
 
-  example "rotate_instance_method" do
+  example 'rotate_instance_method' do
     expect(@r6.rotate(-3)).to eq('abc')
   end
 end
