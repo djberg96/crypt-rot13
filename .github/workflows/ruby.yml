@@ -24,6 +24,8 @@ jobs:
         exclude:
           - ruby-version: truffleruby
             platform: windows-latest
+          - ruby-version: truffleruby
+            platform: macos-latest
           - ruby-version: jruby
             platform: windows-latest
           - ruby-version: 3.0
