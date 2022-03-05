@@ -34,21 +34,30 @@ RSpec.describe Crypt::Rot13 do
     expect{ described_class.new('foo', 7) }.not_to raise_error
   end
 
-  example 'available_methods' do
+  example 'rotate method basic functionality' do
     expect(@r1).to respond_to(:rotate)
   end
 
-  example 'degree' do
+  example 'rotate method requires one argument' do
+    expect{ @r1.rotate }.to raise_error(ArgumentError)
+    expect{ @r1.rotate(1,1) }.to raise_error(ArgumentError)
+  end
+
+  example 'rotate instance method works as expected' do
+    expect(@r6.rotate(-3)).to eq('abc')
+  end
+
+  example 'raises an error if the degree is a multiple of 26' do
     expect{ described_class.new('foo', 26) }.to raise_error(Crypt::Rot13::Error)
     expect{ described_class.new('foo', 52) }.to raise_error(Crypt::Rot13::Error)
     expect{ described_class.new('foo', 25) }.not_to raise_error
   end
 
-  example 'string_class' do
+  example 'return value is a string' do
     expect(@r1).to be_kind_of(String)
   end
 
-  example 'return_value_default_degree' do
+  example 'returns the expected value using the default degree' do
     expect(@r1).to eq('nop')
     expect(@r2).to eq('NOP')
     expect(@r3).to eq('klm')
@@ -56,14 +65,10 @@ RSpec.describe Crypt::Rot13 do
     expect(@r5).to eq('n1o2p3@#$')
   end
 
-  example 'return_value_custom_degree' do
+  example 'returns the expected value using a custom degree' do
     expect(@r6).to eq('def')
     expect(@r7).to eq('DEF')
     expect(@r8).to eq('uvw')
     expect(@r9).to eq('UVW')
-  end
-
-  example 'rotate_instance_method' do
-    expect(@r6.rotate(-3)).to eq('abc')
   end
 end
