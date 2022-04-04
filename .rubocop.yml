@@ -13,6 +13,9 @@ AllCops:
   NewCops: enable
 Lint/AssignmentInCondition:
   Enabled: false
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
 Style/MethodCallWithoutArgsParentheses:
   Enabled: false
 Style/NumericPredicate:

@@ -1,6 +1,7 @@
 require 'rake'
 require 'rake/clean'
 require 'rspec/core/rake_task'
+require 'rubocop/rake_task'
 
 CLEAN.include("**/*.gem", "**/*.rbc", "**/*.lock")
 
@@ -23,5 +24,7 @@ end
 RSpec::Core::RakeTask.new do |t|
   t.pattern = 'spec/crypt_rot13_spec.rb'
 end
+
+RuboCop::RakeTask.new
 
 task :default => :spec
