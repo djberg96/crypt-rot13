@@ -40,7 +40,7 @@ RSpec.describe Crypt::Rot13 do
 
   example 'rotate method requires one argument' do
     expect{ @r1.rotate }.to raise_error(ArgumentError)
-    expect{ @r1.rotate(1,1) }.to raise_error(ArgumentError)
+    expect{ @r1.rotate(1, 1) }.to raise_error(ArgumentError)
   end
 
   example 'rotate instance method works as expected' do
