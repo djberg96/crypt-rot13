@@ -11,6 +11,10 @@ RSpec/InstanceVariable:
 
 AllCops:
   NewCops: enable
+  Exclude:
+    - 'crypt-rot13.gemspec'
+    - 'Rakefile'
+    - 'Gemfile'
 Lint/AssignmentInCondition:
   Enabled: false
 Layout/HashAlignment:
