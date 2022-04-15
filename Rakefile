@@ -21,6 +21,8 @@ namespace :gem do
   end
 end
 
+RuboCop::RakeTask.new
+
 RSpec::Core::RakeTask.new do |t|
   t.pattern = 'spec/crypt_rot13_spec.rb'
 end
