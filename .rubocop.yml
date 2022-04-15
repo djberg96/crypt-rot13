@@ -11,8 +11,15 @@ RSpec/InstanceVariable:
 
 AllCops:
   NewCops: enable
+  Exclude:
+    - 'crypt-rot13.gemspec'
+    - 'Rakefile'
+    - 'Gemfile'
 Lint/AssignmentInCondition:
   Enabled: false
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
 Style/MethodCallWithoutArgsParentheses:
   Enabled: false
 Style/NumericPredicate:
