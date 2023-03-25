@@ -1,3 +1,5 @@
+[![Ruby](https://github.com/djberg96/crypt-rot13/actions/workflows/ruby.yml/badge.svg)](https://github.com/djberg96/crypt-rot13/actions/workflows/ruby.yml)
+
 ## Description
 A library for performing simple character rotation (i.e. Caesar Cipher)
 encryption. There are many like it, but this one is mine.
@@ -32,7 +34,7 @@ https://github.com/djberg96/crypt-rot13
 Apache-2.0
 
 ## Copyright
-(C) 2005-2021, Daniel J. Berger, All Rights Reserved
+(C) 2005-2023, Daniel J. Berger, All Rights Reserved
 
 ## Warranty
 This package is provided "as is" and without any express or
