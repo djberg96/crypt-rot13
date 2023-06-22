@@ -6,6 +6,9 @@ encryption. There are many like it, but this one is mine.
 
 ## Installation
 `gem install crypt-rot13`
+
+## Adding the trusted cert
+`gem cert --add <(curl -Ls https://raw.githubusercontent.com/djberg96/crypt-rot13/main/certs/djberg96_pub.pem)`
    
 ## Synopsis
 ```ruby
