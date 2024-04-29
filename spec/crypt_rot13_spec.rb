@@ -54,7 +54,7 @@ RSpec.describe Crypt::Rot13 do
   end
 
   example 'return value is a string' do
-    expect(@r1).to be_kind_of(String)
+    expect(@r1).to be_a(String)
   end
 
   example 'returns the expected value using the default degree' do
