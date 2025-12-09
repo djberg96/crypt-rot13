@@ -25,6 +25,7 @@ RuboCop::RakeTask.new
 
 RSpec::Core::RakeTask.new do |t|
   t.pattern = 'spec/crypt_rot13_spec.rb'
+  t.rspec_opts = '-f documentation -w'
 end
 
 RuboCop::RakeTask.new
